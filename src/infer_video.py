@@ -12,7 +12,8 @@ class FaceDetectionApp:
         self.video_capture = cv2.VideoCapture(0)
         self.output_dir = self.create_output_dir()
         self.video_writer = self.init_video_writer()
-        
+       
+
     def create_output_dir(self):
         start_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
         output_dir = os.path.join("output_videos", start_time)
@@ -93,7 +94,6 @@ class FaceDetectionApp:
         self.video_capture.release()
         self.video_writer.release()
         cv2.destroyAllWindows()
-        self.log_file.close()
 
 if __name__ == "__main__":
     model_name = r"OpenFace"
