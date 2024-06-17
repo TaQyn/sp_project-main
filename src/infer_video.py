@@ -12,8 +12,7 @@ class FaceDetectionApp:
         self.video_capture = cv2.VideoCapture(0)
         self.output_dir = self.create_output_dir()
         self.video_writer = self.init_video_writer()
-        self.log_file = open(os.path.join(self.output_dir, 'detections.txt'), 'w')
-
+        
     def create_output_dir(self):
         start_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
         output_dir = os.path.join("output_videos", start_time)
