@@ -45,10 +45,15 @@ Code nhận diện khuôn mặt
 ## Chạy Mã Trích Xuất Embedding
 
 1. Đảm bảo có các tệp mô hình cần thiết ở đúng đường dẫn:
-
+```bash
     - Tên mô hình: `OpenFace`
     - Đường dẫn chỉ mục: `path/to/faiss_index.bin`
-    3. Chạy với camera:
+```
+2. Chạy với ảnh:
+```bash
+    python infer_img.py
+```
+3. Chạy với camera:
 ```bash
     python infer_video.py
 ```
