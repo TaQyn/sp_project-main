@@ -48,19 +48,7 @@ Code nhận diện khuôn mặt
 
     - Tên mô hình: `OpenFace`
     - Đường dẫn chỉ mục: `path/to/faiss_index.bin`
-    - Đường dẫn nhãn: `path/to/labels.txt`
-
-2. Chạy mã để trích xuất embedding:
-
-```bash
-    python src\store_embeddings.py
-```
-3. Đảm bảo có các tệp mô hình cần thiết ở đúng đường dẫn:
-    - Tên mô hình: OpenFace
-    - Đường dẫn chỉ mục: path/to/faiss_index.bin
-    - Đường dẫn nhãn: path/to/labels.txt
-
-4. Chạy với camera:
+    3. Chạy với camera:
 ```bash
     python infer_video.py
 ```
